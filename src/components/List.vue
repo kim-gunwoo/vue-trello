@@ -26,7 +26,7 @@
       <AddCard :list-id="data.id" @close="isAddCard = false" />
     </div>
     <div v-else>
-      <a class="add-card-btn" href="" @click.prevent="isAddCard = true">
+      <a class="add-card-btn" href="" @click.prevent.stop="isAddCard = true">
         &plus; Add a card...
       </a>
     </div>
